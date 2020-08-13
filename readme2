@@ -1,0 +1,184 @@
+<section id="portfolio" data-jarallax='{"speed": 0.2}' style="margin-bottom:-50px">
+    <div class="container" id="blah2">
+
+        <div class="row">
+            <div class="col-md-8 col-lg-6 offset-md-2 offset-lg-3">
+                <div class="section-title" style="margin-bottom: -10px">
+                    <h4>Portfolio</h4>
+                </div>
+            </div>
+        </div>
+
+        <ul class="filter-list list-inline text-center">
+            <li class="is-checked" data-filter="*">All</li>
+            <li data-filter=".database">Using databases</li>
+            <li data-filter=".APIs">Using APIs</li>
+            <li data-filter=".other">Other</li>
+        </ul>
+
+        <div class="row filter-row popup-row">
+
+        <div class=" database APIs col-md-4 col-sm-6 col-lg-3 filter-item project-pic-filter-item">
+            <div class="work-card" >
+                <div class="comingsoon">
+
+                <%= image_tag("placeholder.jpg", title: "work 1", class: "foliopic" ) %>
+                <div class="work-overlay">
+                    <div class="comingsoontext">
+                    <h3>PROJECT 1</h3>
+                    <p style="text-align:center"><em>Loading soon!</em></p>
+                    </div>
+                </div>
+
+                </div>
+                <!-- end coming soon -->
+            </div>
+            <!-- end work card -->
+        </div>
+        <!-- end filter-item -->
+
+
+
+          <div class="database other col-md-4 col-sm-6 col-lg-3 filter-item project-pic-filter-item">
+              <div class="work-card" >
+                  <div class="comingsoon">
+
+                      <%= image_tag("placeholder.jpg", title: "work 1", class: "foliopic" ) %>
+                      <div class="work-overlay">
+                          <div class="comingsoontext">
+                          <h3>PROJECT 2</h3>
+                          <p style="text-align:center"><em>Loading soon!</em></p>
+                          </div>
+                      </div>
+
+                  </div>
+                  <!-- end coming soon -->
+              </div>
+              <!-- end work card -->
+            </div>
+            <!-- end filter-item -->
+
+
+              <div class=" other APIs col-md-4 col-sm-6 col-lg-3 filter-item project-pic-filter-item">
+                <div class="work-card" >
+                    <div class="comingsoon">
+
+                        <%= image_tag("placeholder.jpg", title: "work 1", class: "foliopic" ) %>
+                        <div class="work-overlay">
+                            <div class="comingsoontext">
+                            <h3>PROJECT 3</h3>
+                            <p style="text-align:center"><em>Loading soon!</em></p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end coming soon -->
+                </div>
+                <!-- end work card -->
+              </div>
+              <!-- end filter-item -->
+
+
+
+              <div class=" database APIs col-md-4 col-sm-6 col-lg-3 filter-item project-pic-filter-item">
+                <div class="work-card" >
+                    <div class="comingsoon">
+
+                        <%= image_tag("placeholder.jpg", title: "work 1", class: "foliopic" ) %>
+                        <div class="work-overlay">
+                            <div class="comingsoontext">
+                            <h3>PROJECT 4</h3>
+                            <p style="text-align:center"><em>Loading soon!</em></p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end coming soon -->
+                </div>
+                <!-- end work card -->
+              </div>
+              <!-- end filter-item -->
+
+
+              <div class=" other APIs col-md-4 col-sm-6 col-lg-3 filter-item project-pic-filter-item">
+                <div class="work-card" >
+                    <div class="comingsoon">
+
+                        <%= image_tag("placeholder.jpg", title: "work 1", class: "foliopic" ) %>
+                        <div class="work-overlay">
+                            <div class="comingsoontext">
+                            <h3>PROJECT 5</h3>
+                            <p style="text-align:center"><em>Loading soon!</em></p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end coming soon -->
+                </div>
+                <!-- end work card -->
+              </div>
+              <!-- end filter-item -->
+
+              <div class=" database col-md-4 col-sm-6 col-lg-3 filter-item project-pic-filter-item">
+                <div class="work-card" >
+                    <div class="comingsoon">
+
+                        <%= image_tag("placeholder.jpg", title: "work 1", class: "foliopic" ) %>
+                        <div class="work-overlay">
+                            <div class="comingsoontext">
+                            <h3>PROJECT 6</h3>
+                            <p style="text-align:center"><em>Loading soon!</em></p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end coming soon -->
+                </div>
+                <!-- end work card -->
+              </div>
+              <!-- end filter-item -->
+
+              <div class=" database other col-md-4 col-sm-6 col-lg-3 filter-item project-pic-filter-item">
+                <div class="work-card" >
+                    <div class="comingsoon">
+
+                        <%= image_tag("placeholder.jpg", title: "work 1", class: "foliopic" ) %>
+                        <div class="work-overlay">
+                            <div class="comingsoontext">
+                            <h3>PROJECT 7</h3>
+                            <p style="text-align:center"><em>Loading soon!</em></p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end coming soon -->
+                </div>
+                <!-- end work card -->
+              </div>
+              <!-- end filter-item -->
+
+              <div class=" database APIs col-md-4 col-sm-6 col-lg-3 filter-item project-pic-filter-item">
+                <div class="work-card" >
+                    <div class="comingsoon">
+
+                        <%= image_tag("placeholder.jpg", title: "work 1", class: "foliopic" ) %>
+                        <div class="work-overlay">
+                            <div class="comingsoontext">
+                            <h3>PROJECT 8</h3>
+                            <p style="text-align:center"><em>Loading soon!</em></p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end coming soon -->
+                </div>
+                <!-- end work card -->
+              </div>
+              <!-- end filter-item -->
+
+        </div>
+        <!--end filter-row-->
+    </div>
+    <!-- end portfolio container-->
+</section>
+<!-- end portfolio section -->

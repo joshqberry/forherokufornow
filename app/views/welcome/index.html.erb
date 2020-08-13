@@ -1,21 +1,24 @@
 
   <section id="hero-image" style="margin-bottom:30px">
-    <div class="container">
+    <div class="container" style="min-width:95%">
 
 <!-- Would like to play with this container id, forcing navbar to bottom of page:
       id="schnook" -->
 
         <div class="row hero-row">
-            <div class=" col-md-8 offset-md-2 text-center hero-image">
+            <div class=" col-md-5 offset-md-1 text-left hero-image">
                 <%= image_tag("jqberry-logo-no-name.svg", title: "JQ logo") %>
             </div>
-        </div>
-    </div>
-  </section>
-  <!-- end hero-image -->
 
 
-  <div class="section-title" style="margin-top:40px; margin-bottom:55px">
+            <div class="section-title" style="margin-top:10%; margin-bottom:55px">
+              <h1>Software development</h1>
+              <h1 style="margin-top:40px">UI/UX consulting</h1>
+              <h1 style="margin-top:40px">Information design</h1>
+            </div>
+
+
+  <!-- <div class="section-title" style="margin-top:40px; margin-bottom:55px">
     <h1>Software development</h1>
   </div>
   <div class="section-title" style="margin-bottom:55px">
@@ -23,11 +26,19 @@
   </div>
   <div class="section-title" style="margin-bottom:55px">
     <h1>Information design</h1>
+  </div> -->
+
+
   </div>
+  <!-- end hero-row -->
+  </div>
+  <!-- end container -->
+  </section>
+  <!-- end hero-image -->
+
 
   <!-- sticky-wrapper div for navbar is javascripturally created here when user-scrolling
 brings navbar to top of viewport  -->
-
 
   <nav class="navbar navbar-expand-lg sticky">
 
@@ -46,28 +57,28 @@ brings navbar to top of viewport  -->
   <div class="collapse navbar-collapse" id="full-navbar-drowdown">
       <ul class="navbar-nav ml-auto">
 
-          <li><a href="#skills" class="nav-link" id="hoop">SKILLS </a></li>
-          <li><a href="#featured-project" class="nav-link" id="hoop2">PORTFOLIO </a></li>
-          <li><a href="#softskills" class="nav-link" id="hoop3">SOFT SKILLS </a></li>
+          <li><a href="#skills" class="nav-link" id="hoop">TECH SKILLS  &nbsp;&nbsp;</a></li>
+          <!-- <li><a href="#featured-project" class="nav-link" id="hoop2">PORTFOLIO &nbsp;&nbsp;</a></li> -->
+          <li><a href="#softskills" class="nav-link" id="hoop3">SOFT SKILLS &nbsp;&nbsp;</a></li>
 
           <li class="nav-item dropdown">
               <span class="nav-link dropdown-toggle" id="resume-dropdown-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   R&#201;sum&#201;
               </span>
-                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="resume-dropdown-menu">
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="resume-dropdown-menu" style="padding:30%">
 
-                    <a class="dropdown-item"> <%= link_to "Raspberry", asset_path("Quesenberry_2018_raspberry_resume.pdf", skip_pipeline: true), class: "dropdown-item-bold", target: "_blank" %></a>
-                    <a class="dropdown-item">(pretty and to the point)</a>
+                    <a class="dropdown-item"> <%= link_to "Single page", asset_path("Wikirez_with_links.pdf", skip_pipeline: true), class: "dropdown-item-bold", target: "_blank" %></a>
+                    <a class="dropdown-item">(a succinct overview)</a>
 
-                    <a class="dropdown-item"> <%= link_to "Vanilla", asset_path("Quesenberry_2018_vanilla_resume.pdf", skip_pipeline: true), class: "dropdown-item-bold", target: "_blank" %></a>
-                    <a class="dropdown-item">(more details, less visuals)</a>
+                    <a class="dropdown-item"> <%= link_to "Expanded", asset_path("Quesenberry_2018_vanilla_resume.pdf", skip_pipeline: true), class: "dropdown-item-bold", target: "_blank" %></a>
+                    <a class="dropdown-item">(a full picture)</a>
                   </div>
           </li>
           <li class="nav-item dropdown">
               <span class="nav-link dropdown-toggle" id="contact-me-dropdown-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Contact
+                &nbsp;&nbsp;Contact
               </span>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="contact-me-dropdown-menu">
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="contact-me-dropdown-menu" style="padding:30%">
                   <span style="float:right">(970) 405-7910</span>
                   <span style="float:right">joshqberry@gmail.com</span>
                   <ul class="list-inline">
@@ -197,7 +208,11 @@ brings navbar to top of viewport  -->
           <%= image_tag "photoshop-cc.svg" %>
       </div>
 
-      <div class=" back-end app col-md-4 col-sm-6 col-lg-3 filter-item filter-item-small" >
+      <div class=" back-end app col-md-4 col-sm-6 col-lg-3 filter-item filter-item-small">
+          <%= image_tag "react.svg" %>
+      </div>
+
+      <!-- <div class=" back-end app col-md-4 col-sm-6 col-lg-3 filter-item filter-item-small" >
           <div class="work-card">
               <div class="comingsoon">
                   <%= image_tag "react.svg" %>
@@ -209,7 +224,7 @@ brings navbar to top of viewport  -->
                   </div>
               </div>
         </div>
-      </div>
+      </div> -->
 
       <div class=" front-end app col-md-4 col-sm-6 col-lg-3 filter-item filter-item-small" style="width:250px">
           <%= image_tag "jquery.svg" %>
@@ -258,190 +273,7 @@ brings navbar to top of viewport  -->
 
 
 
-    <section id="portfolio" data-jarallax='{"speed": 0.2}' style="margin-bottom:-50px">
-        <div class="container" id="blah2">
 
-            <div class="row">
-                <div class="col-md-8 col-lg-6 offset-md-2 offset-lg-3">
-                    <div class="section-title" style="margin-bottom: -10px">
-                        <h4>Portfolio</h4>
-                    </div>
-                </div>
-            </div>
-
-            <ul class="filter-list list-inline text-center">
-                <li class="is-checked" data-filter="*">All</li>
-                <li data-filter=".database">Using databases</li>
-                <li data-filter=".APIs">Using APIs</li>
-                <li data-filter=".other">Other</li>
-            </ul>
-
-            <div class="row filter-row popup-row">
-
-            <div class=" database APIs col-md-4 col-sm-6 col-lg-3 filter-item project-pic-filter-item">
-                <div class="work-card" >
-                    <div class="comingsoon">
-
-                    <%= image_tag("placeholder.jpg", title: "work 1", class: "foliopic" ) %>
-                    <div class="work-overlay">
-                        <div class="comingsoontext">
-                        <h3>PROJECT 1</h3>
-                        <p style="text-align:center"><em>Loading soon!</em></p>
-                        </div>
-                    </div>
-
-                    </div>
-                    <!-- end coming soon -->
-                </div>
-                <!-- end work card -->
-            </div>
-            <!-- end filter-item -->
-
-
-
-              <div class="database other col-md-4 col-sm-6 col-lg-3 filter-item project-pic-filter-item">
-                  <div class="work-card" >
-                      <div class="comingsoon">
-
-                          <%= image_tag("placeholder.jpg", title: "work 1", class: "foliopic" ) %>
-                          <div class="work-overlay">
-                              <div class="comingsoontext">
-                              <h3>PROJECT 2</h3>
-                              <p style="text-align:center"><em>Loading soon!</em></p>
-                              </div>
-                          </div>
-
-                      </div>
-                      <!-- end coming soon -->
-                  </div>
-                  <!-- end work card -->
-                </div>
-                <!-- end filter-item -->
-
-
-                  <div class=" other APIs col-md-4 col-sm-6 col-lg-3 filter-item project-pic-filter-item">
-                    <div class="work-card" >
-                        <div class="comingsoon">
-
-                            <%= image_tag("placeholder.jpg", title: "work 1", class: "foliopic" ) %>
-                            <div class="work-overlay">
-                                <div class="comingsoontext">
-                                <h3>PROJECT 3</h3>
-                                <p style="text-align:center"><em>Loading soon!</em></p>
-                                </div>
-                            </div>
-
-                        </div>
-                        <!-- end coming soon -->
-                    </div>
-                    <!-- end work card -->
-                  </div>
-                  <!-- end filter-item -->
-
-
-
-                  <div class=" database APIs col-md-4 col-sm-6 col-lg-3 filter-item project-pic-filter-item">
-                    <div class="work-card" >
-                        <div class="comingsoon">
-
-                            <%= image_tag("placeholder.jpg", title: "work 1", class: "foliopic" ) %>
-                            <div class="work-overlay">
-                                <div class="comingsoontext">
-                                <h3>PROJECT 4</h3>
-                                <p style="text-align:center"><em>Loading soon!</em></p>
-                                </div>
-                            </div>
-
-                        </div>
-                        <!-- end coming soon -->
-                    </div>
-                    <!-- end work card -->
-                  </div>
-                  <!-- end filter-item -->
-
-
-                  <div class=" other APIs col-md-4 col-sm-6 col-lg-3 filter-item project-pic-filter-item">
-                    <div class="work-card" >
-                        <div class="comingsoon">
-
-                            <%= image_tag("placeholder.jpg", title: "work 1", class: "foliopic" ) %>
-                            <div class="work-overlay">
-                                <div class="comingsoontext">
-                                <h3>PROJECT 5</h3>
-                                <p style="text-align:center"><em>Loading soon!</em></p>
-                                </div>
-                            </div>
-
-                        </div>
-                        <!-- end coming soon -->
-                    </div>
-                    <!-- end work card -->
-                  </div>
-                  <!-- end filter-item -->
-
-                  <div class=" database col-md-4 col-sm-6 col-lg-3 filter-item project-pic-filter-item">
-                    <div class="work-card" >
-                        <div class="comingsoon">
-
-                            <%= image_tag("placeholder.jpg", title: "work 1", class: "foliopic" ) %>
-                            <div class="work-overlay">
-                                <div class="comingsoontext">
-                                <h3>PROJECT 6</h3>
-                                <p style="text-align:center"><em>Loading soon!</em></p>
-                                </div>
-                            </div>
-
-                        </div>
-                        <!-- end coming soon -->
-                    </div>
-                    <!-- end work card -->
-                  </div>
-                  <!-- end filter-item -->
-
-                  <div class=" database other col-md-4 col-sm-6 col-lg-3 filter-item project-pic-filter-item">
-                    <div class="work-card" >
-                        <div class="comingsoon">
-
-                            <%= image_tag("placeholder.jpg", title: "work 1", class: "foliopic" ) %>
-                            <div class="work-overlay">
-                                <div class="comingsoontext">
-                                <h3>PROJECT 7</h3>
-                                <p style="text-align:center"><em>Loading soon!</em></p>
-                                </div>
-                            </div>
-
-                        </div>
-                        <!-- end coming soon -->
-                    </div>
-                    <!-- end work card -->
-                  </div>
-                  <!-- end filter-item -->
-
-                  <div class=" database APIs col-md-4 col-sm-6 col-lg-3 filter-item project-pic-filter-item">
-                    <div class="work-card" >
-                        <div class="comingsoon">
-
-                            <%= image_tag("placeholder.jpg", title: "work 1", class: "foliopic" ) %>
-                            <div class="work-overlay">
-                                <div class="comingsoontext">
-                                <h3>PROJECT 8</h3>
-                                <p style="text-align:center"><em>Loading soon!</em></p>
-                                </div>
-                            </div>
-
-                        </div>
-                        <!-- end coming soon -->
-                    </div>
-                    <!-- end work card -->
-                  </div>
-                  <!-- end filter-item -->
-
-            </div>
-            <!--end filter-row-->
-        </div>
-        <!-- end portfolio container-->
-    </section>
-    <!-- end portfolio section -->
 
     <section id="softskills">
         <div class="container" id="blah3">
